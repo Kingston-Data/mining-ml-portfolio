@@ -15,15 +15,13 @@ Tools used: Python, pandas, numpy, matplotlib, scikit-learn, Jupyter Notebook
 ## Structure
 
 mining-ml-portfolio/
-
 │
-
 ├── week1-eda/
-
 │   └── deepmine_week1_eda.ipynb
-
 │
-
+├── week2-feature-analysis/
+│   └── deepmine_week2_feature_analysis.ipynb
+│
 └── README.md
 
 ---
@@ -47,6 +45,23 @@ mining-ml-portfolio/
 - Heat Dissipation is the most common failure type (115 cases)
 - Random failure is the least common (19 cases)
 - Class imbalance must be handled carefully when building ML models
+
+---
+
+###  Week 2 — Feature Analysis & Correlation
+**Notebook:** `week2-feature-analysis/deepmine_week2_feature_analysis.ipynb`
+**Dataset:** AI4I 2020 Predictive Maintenance Dataset
+
+**What I did:**
+- Compared average sensor readings for failed vs non-failed machines across all 5 features
+- Built a correlation heatmap to measure each feature's relationship with machine failure
+- Used box plots to visualise feature distributions by failure status
+
+**Key findings:**
+- **Torque** is the strongest predictor of failure — correlation of 0.19, failed machines average 10.5 Nm higher
+- **Tool wear** is second strongest — failed machines ran 37 minutes longer before breaking
+- **Rotational speed** is negatively correlated — machines slow down under stress before failing
+- No single feature predicts failure alone — all features must be combined in the model
 
 ---
 
