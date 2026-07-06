@@ -13,16 +13,14 @@ Tools used: Python, pandas, numpy, matplotlib, scikit-learn, Jupyter Notebook
 ---
 
 ## Structure
-
+```text
 mining-ml-portfolio/
-│
 ├── week1-eda/
 │   └── deepmine_week1_eda.ipynb
-│
 ├── week2-feature-analysis/
 │   └── deepmine_week2_feature_analysis.ipynb
-│
 └── README.md
+```
 
 ---
 
@@ -41,9 +39,9 @@ mining-ml-portfolio/
 
 **Key findings:**
 - Overall failure rate: **3.39%** — heavily imbalanced dataset
-- Failed machines run hotter in both air temp (~+0.9K) and process temp (~+0.3K)
-- Heat Dissipation is the most common failure type (115 cases)
-- Random failure is the least common (19 cases)
+- Failed machines run hotter in both air temperature, approximately **+0.9K**, and process temperature, approximately **+0.3K**
+- Heat Dissipation is the most common failure type, with **115 cases**
+- Random Failure is the least common failure type, with **19 cases**
 - Class imbalance must be handled carefully when building ML models
 
 ---
@@ -58,10 +56,10 @@ mining-ml-portfolio/
 - Used box plots to visualise feature distributions by failure status
 
 **Key findings:**
-- **Torque** is the strongest predictor of failure — correlation of 0.19, failed machines average 10.5 Nm higher
-- **Tool wear** is second strongest — failed machines ran 37 minutes longer before breaking
-- **Rotational speed** is negatively correlated — machines slow down under stress before failing
-- No single feature predicts failure alone — all features must be combined in the model
+- **Torque** is the strongest predictor of failure — correlation of **0.19**, with failed machines averaging **10.5 Nm higher**
+- **Tool wear** is the second strongest predictor — failed machines ran **37 minutes longer** before breaking
+- **Rotational speed** is negatively correlated with failure — machines tend to slow down under stress before failing
+- No single feature predicts failure alone, so multiple features should be combined when building the model
 
 ---
 
