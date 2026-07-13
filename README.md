@@ -15,10 +15,16 @@ Tools used: Python, pandas, numpy, matplotlib, scikit-learn, Jupyter Notebook
 ## Structure
 ```text
 mining-ml-portfolio/
+│
 ├── week1-eda/
 │   └── deepmine_week1_eda.ipynb
+│
 ├── week2-feature-analysis/
 │   └── deepmine_week2_feature_analysis.ipynb
+│
+├── week3-predictive-model/
+│   └── deepmine_week3_predictive_model.ipynb
+│
 └── README.md
 ```
 
@@ -62,7 +68,25 @@ mining-ml-portfolio/
 - No single feature predicts failure alone, so multiple features should be combined when building the model
 
 ---
+### Week 3 — Predictive Maintenance Model
+**Notebook:** `week3-predictive-model/deepmine_week3_predictive_model.ipynb`
+**Dataset:** AI4I 2020 Predictive Maintenance Dataset
 
+**What I did:**
+- Prepared features and target variable for ML modelling
+- Split data 80/20 into training and testing sets using stratified sampling
+- Trained a Random Forest classifier with 100 decision trees and balanced class weights
+- Evaluated model using precision, recall, F1-score and confusion matrix
+- Analysed feature importance to understand model decisions
+
+**Key findings:**
+- Model achieved **Recall of 0.57** on failure class — catches 57% of actual failures
+- Model achieved **Precision of 0.89** on failure class — 89% of alerts are genuine
+- **Torque** is the most important feature (32.0%) — consistent with Week 2
+- **Rotational speed** ranked 2nd in importance (31.3%) despite low correlation in Week 2
+- 29 out of 68 failures were missed — improving Recall is the Week 4 goal
+
+---
 ## Dataset
 
 AI4I 2020 Predictive Maintenance Dataset  
